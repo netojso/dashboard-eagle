@@ -1,0 +1,122 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "status": true,
+      "user": {
+        "id": 1,
+        "avatar": "https://www.oaltouruguai.com.br/storage/files/31072020153755-602d143d0ccc280.jpg",
+        "name": "Roberto Gómez",
+        "apelido": "Chaves",
+        "contato": "(22) 93203-2039",
+        "tipo": "Pessoa Física",
+        "cpf": "182.309.211-09",
+        "data": 20,
+        "nascimento": "10/04/1960"
+      }
+    },
+    {
+      "id": 2,
+      "status": true,
+      "user": {
+        "id": 2,
+        "avatar": "https://vignette.wikia.nocookie.net/chespirito/images/e/ef/Chiquinha.png/revision/latest?cb=20180717201504&path-prefix=pt",
+        "name": "María Antonieta",
+        "apelido": "Chiquinha",
+        "contato": "(22) 93203-2039",
+        "tipo": "Pessoa Física",
+        "cpf": "182.309.211-09",
+        "data": 12,
+        "nascimento": "10/04/1960"
+      }
+    },
+    {
+      "id": 3,
+      "status": true,
+      "user": {
+        "id": 3,
+        "avatar": "https://www.cliccamaqua.com.br/images/noticias/img_43206_foto_1_a.jpg",
+        "name": "Ramón Valdés",
+        "apelido": "Seu madruga",
+        "contato": "(22) 93203-2039",
+        "tipo": "Pessoa Física",
+        "cpf": "182.309.211-09",
+        "data": 20,
+        "nascimento": "10/04/1960"
+      }
+    },
+    {
+      "id": 4,
+      "status": true,
+      "user": {
+        "id": 4,
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRI6nu7kpHjeqFHv5BuKNOtZwvuI7_6svjOmQ&usqp=CAU",
+        "name": "Carlos Villagrán",
+        "apelido": "Quico",
+        "contato": "(22) 93203-2039",
+        "tipo": "Pessoa Física",
+        "cpf": "182.309.211-09",
+        "data": 20,
+        "nascimento": "10/04/1960"
+      }
+    },
+    {
+      "id": 5,
+      "status": true,
+      "user": {
+        "id": 5,
+        "avatar": "https://miro.medium.com/max/793/1*oX16NR_GtosBORoAKQ7oSg.jpeg",
+        "name": "Florinda Meza",
+        "apelido": "Dona Florinda",
+        "contato": "(22) 93203-2039",
+        "tipo": "Pessoa Física",
+        "cpf": "182.309.211-09",
+        "data": 20,
+        "nascimento": "10/04/1960"
+      }
+    }
+    ],
+  "collabs": [
+    {
+      "id": 1,
+      "status": "Ausente",
+      "user": {
+        "avatar": "https://jpimg.com.br/uploads/2017/04/704907009-relembre-grandes-momentos-de-ruben-aguirre-como-professor-girafales.jpg",
+        "name": "Professor Girafales"
+      },
+      "login": "11/08/2020 às 10:00h",
+      "clients": 10
+    },
+    {
+      "id": 2,
+      "status": "Atendimento",
+      "user": {
+        "avatar": "https://lh3.googleusercontent.com/proxy/ipKJxwESNZiT_df771TCOwiZ_27WhZBRfjb1pWxTelGqfCh9XN7W3zSnA0oPePIsHqTwoRCwTP5jwibNurj-YNwWk6-nFTlpKL1KHZ9m9BNczKeg3JFaXhiTjJAP",
+        "name": "Godinez"
+      },
+      "login": "11/08/2020 às 10:00h",
+      "clients": 12
+    },
+    {
+      "id": 3,
+      "status": "Almoço",
+      "user": {
+        "avatar": "https://i.pinimg.com/originals/ab/fc/23/abfc23bee361406398ecd4f2f7d6d1c5.jpg",
+        "name": "Senhor Barriga"
+      },
+      "login": "11/08/2020 às 10:00h",
+      "clients": 14
+    },
+    {
+      "id": 4,
+      "status": "Disponível",
+      "user": {
+        "avatar": "https://pbs.twimg.com/media/DyZd_CnWwAIvayQ.jpg",
+        "name": "Nhonho"
+      },
+      "login": "11/08/2020 às 10:00h",
+      "clients": 16
+    }
+
+  ]
+}
