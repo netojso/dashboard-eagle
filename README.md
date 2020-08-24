@@ -35,12 +35,11 @@
 
 ## Layout:
 
+![Dashboard](https://github.com/netojso/teste-eagle/blob/master/prints/Pagina%20Clientes.png)
 
 ## Pré-requisitos
 
-:warning: [Node](https://nodejs.org/en/download/)
-
-Usei o Json-Server para criar uma api local com o arquivo server.json
+:warning:  [Node](https://nodejs.org/en/download/)
 
 
 ## Como rodar a aplicação :arrow_forward:
@@ -48,13 +47,13 @@ Usei o Json-Server para criar uma api local com o arquivo server.json
 No terminal, clone o projeto:
 
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+git clone https://github.com/netojso/teste-eagle.git
 ```
 ```
 yarn install
 ```
 
-Usei o Json-Server para criar uma api local com o arquivo server.json
+Usei o **json-server** para criar uma api local com o arquivo server.json
 
 ```
 yarn json-server server.json -p 3333
@@ -69,11 +68,12 @@ yarn start
 - [Styled-Components](https://react-pdf.org/)
 - [CoreUI](https://coreui.io/)
 - [React-Base-Table](https://autodesk.github.io/react-base-table/)
+- [Json-server](https://github.com/typicode/json-server)
 
 
 ## Desenvolvedores/Contribuintes :octocat:
 
-**Linkedin:** [Octacilio Serafim](https://linkedin/in/octacilio-serafim)
+**Linkedin:** [Octacilio Serafim](https://www.linkedin.com/in/octacilio-serafim/)
 
 
 ## Licença
