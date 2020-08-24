@@ -35,7 +35,7 @@
 
 ## Layout:
 
-![Dashboard](https://github.com/netojso/teste-eagle/blob/master/prints/Pagina%20Clientes.png)
+![Dashboard](https://github.com/netojso/teste-eagle/blob/master/prints/Pagina%20Dashboard.png)
 
 ## Pré-requisitos
 
@@ -49,15 +49,20 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/netojso/teste-eagle.git
 ```
+Acesse a pasta raiz do repositório clonado e rode:
+
 ```
 yarn install
 ```
 
-Usei o **json-server** para criar uma api local com o arquivo server.json
+Usei o **json-server** para criar uma api local com o arquivo server.json, para isso rode:
 
 ```
 yarn json-server server.json -p 3333
 ```
+
+Em outro terminal, rode:
+
 ```
 yarn start
 ```
