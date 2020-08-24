@@ -13,6 +13,11 @@ interface IProps {
   };
   setSelectedPage: any;
 }
+
+// Componente para renderizar na tabela
+
+// Recebe os dados do cliente e invoca a função passando os dados
+
 const ButtonUser: React.FC<IProps> = ({ cellData, setSelectedPage }: IProps) => (
   <button
     type="button"

@@ -6,7 +6,10 @@ interface IProps {
     name: string;
   }
 }
-const ButtonUser: React.FC<IProps> = ({ cellData }: IProps) => (
+
+// Componente para renderizar na tabela
+
+const DivUser: React.FC<IProps> = ({ cellData }: IProps) => (
   <div
     style={{
       width: 250,
@@ -28,4 +31,4 @@ const ButtonUser: React.FC<IProps> = ({ cellData }: IProps) => (
   </div>
 );
 
-export default ButtonUser;
+export default DivUser;

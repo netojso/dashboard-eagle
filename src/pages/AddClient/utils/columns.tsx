@@ -1,5 +1,7 @@
 import { Column } from 'react-base-table';
 
+// Colunas que serão enviadas como parâmetro para Table
+
 const columns = [
   {
     key: 'cep',

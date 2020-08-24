@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react';
 import { Column } from 'react-base-table';
-import ButtonUser from './ButtonUser';
+import DivUser from './DivUser';
+
+// Colunas que serão enviadas para a Table
 
 const columns = [
   {
-    key: 'status',
     title: 'Status',
     dataKey: 'status',
     width: 150,
@@ -13,17 +14,15 @@ const columns = [
     style: { color: '#475766', fontSize: 16 },
   },
   {
-    key: 'name',
     title: 'Nome do colaborador',
     dataKey: 'user',
     width: 300,
-    cellRenderer: ({ cellData }) => (<ButtonUser cellData={cellData} />),
+    cellRenderer: ({ cellData }) => (<DivUser cellData={cellData} />),
     resizable: true,
     align: Column.Alignment.CENTER,
     style: { color: '#475766', fontSize: 16 },
   },
   {
-    key: 'login',
     title: 'Horário de login',
     dataKey: 'login',
     width: 250,
@@ -32,7 +31,6 @@ const columns = [
 
   },
   {
-    key: 'clientes',
     title: 'Clientes atendidos',
     dataKey: 'clients',
     width: 200,

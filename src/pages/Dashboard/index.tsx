@@ -34,19 +34,21 @@ interface Client {
   tipo: string,
   cpf: string,
   data: number,
+  nascimento: string;
 }
 
 const Dashboard: React.FC = () => {
   const [selectedPage, setSelectedPage] = useState('Dashboard');
+
+  // State usado para enviar dados do cliente selecionado para a EditPage
   const [selectedClient, setSelectedClient] = useState({} as Client);
+
+  // Função para trocar as paǵinas no painel (Dashboard, Clientes, Colaboradores)
   const handleSelectedPage = useCallback((item) => {
     setSelectedPage(item);
-    // setSelectedClient(item[1]);
   }, []);
-  // const handleSelectedClient = useCallback((client) => {
-  //   setSelectedClient(client);
-  // }, []);
 
+  // Switch case para caso o state seja um valor renderizar determinada página
   function SwitchPage(item: string) {
     switch (item) {
       case 'Dashboard':
@@ -54,7 +56,6 @@ const Dashboard: React.FC = () => {
       case 'Clientes':
         return (
           <Clients
-            // handleSelectedClient={(client: any) => handleSelectedClient(client)}
             handleSelectedPage={(val) => {
               setSelectedClient(val[1])
               handleSelectedPage(val[0])}

@@ -2,6 +2,8 @@ import React from 'react';
 import { CRow, CCol, CWidgetDropdown } from '@coreui/react';
 import ChartLineSimple from './ChartLine/ChartLine';
 
+// Lib para criar os cards com gráficos na Dashboard
+
 const Cards: React.FC = () => (
   <CRow style={{ marginBottom: 20 }}>
     <CCol>
@@ -15,7 +17,7 @@ const Cards: React.FC = () => (
             className="c-chart-wrapper mt-3 mx-3"
             dataPoints={[65, 59, 84, 84, 51, 55, 40]}
             pointHoverBackgroundColor="rgba(255,255,255,.55)"
-            label="Members"
+            label="Ativos"
           />
         }
       />
@@ -32,7 +34,7 @@ const Cards: React.FC = () => (
             className="c-chart-wrapper mt-3 mx-3"
             dataPoints={[65, 59, 84, 84, 51, 55, 40]}
             pointHoverBackgroundColor="rgba(255,255,255,.55)"
-            label="Members"
+            label="Inativos"
           />
         }
       />
@@ -49,7 +51,7 @@ const Cards: React.FC = () => (
             className="c-chart-wrapper mt-3 mx-3"
             dataPoints={[65, 59, 84, 84, 51, 55, 40]}
             pointHoverBackgroundColor="rgba(255,255,255,.55)"
-            label="Members"
+            label="Chamados"
           />
         }
       />

@@ -11,7 +11,6 @@ import {
   UpdateButton,
 } from './styles';
 import Input from '../../components/Input';
-import { FiCamera } from 'react-icons/fi';
 import { AiFillCamera } from 'react-icons/ai';
 
 interface IProps {
@@ -27,12 +26,14 @@ interface Client {
     tipo: string,
     cpf: string,
     data: number,
+    nascimento: string;
 }
 
 
 const EditClient: React.FC<IProps> = ({ clientId }) => {
   const [selectedOption, setSelectedOption] = useState(1);
 
+  // Função para trocar o state entre as opções (Dados Pessoais, Endereço, etc)
   const handleOption = useCallback(item => {
     setSelectedOption(item);
   }, []);
@@ -118,7 +119,7 @@ const EditClient: React.FC<IProps> = ({ clientId }) => {
               name="Data de nascimento"
               type="text"
               width={200}
-              value={clientId.data}
+              value={clientId.nascimento}
             />
             <Input
               label
@@ -135,9 +136,7 @@ const EditClient: React.FC<IProps> = ({ clientId }) => {
                 justifyContent: 'flex-start',
                 paddingTop: 5,
                 paddingLeft: 25,
-              }
-}
-          >
+              }}>
             <Input
               id="telefone"
               label

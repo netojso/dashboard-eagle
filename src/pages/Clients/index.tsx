@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Table from 'react-base-table';
+import Table from '../../components/Table';
 import {
   Container, Painel,
 } from './styles';
@@ -9,6 +9,10 @@ import api from '../../services/api';
 interface IProps {
   handleSelectedPage: any;
 }
+
+// Recebe essa função que vem de Dashboard para buscar a página selecionada
+// junto com os dados
+
 const Clients: React.FC<IProps> = ({ handleSelectedPage }) => {
   const [clients, setClients] = useState([]);
 
@@ -31,6 +35,7 @@ const Clients: React.FC<IProps> = ({ handleSelectedPage }) => {
           <span>Adicionar Cliente</span>
         </button>
         <Table
+          key="clientes"
           data={clients}
           width={900}
           columns={columns(handleSelectedPage)}

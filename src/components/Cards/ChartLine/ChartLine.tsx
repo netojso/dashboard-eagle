@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 import { getColor, deepObjectsMerge } from '@coreui/utils/src';
 import { CChartLine } from '@coreui/react-chartjs';
 
+// Lib para criar os cards com gráficos na Dashboard
+
 const ChartLineSimple = props => {
   const {
     borderColor,

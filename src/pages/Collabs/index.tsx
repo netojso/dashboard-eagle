@@ -7,6 +7,8 @@ import Table from '../../components/Table';
 
 const Collabs: React.FC = () => {
   const [collabs, setCollabs] = useState([]);
+
+  // Faz a request no momento que a página é renderizada e seta os dados em 'collabs'
   useEffect(() => {
     async function loadCollabs() {
    const response = await api.get('collabs');
@@ -22,6 +24,7 @@ const Collabs: React.FC = () => {
   <Painel>
     <Cards />
     <Table
+      key="collabs"
       data={collabs}
       width={900}
       columns={columns}

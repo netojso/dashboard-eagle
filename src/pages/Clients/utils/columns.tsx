@@ -4,9 +4,13 @@ import { CSwitch } from '@coreui/react';
 import { Column } from 'react-base-table';
 import ButtonUser from './ButtonUser';
 
+
+// Colunas que serão enviadas para a Table
+
+// Recebe uma função como parâmetro para buscar o cliente selecionado na tabela
+
 const columns = (handleSelectedPage) => ([
   {
-    key: 'status',
     title: 'Status',
     dataKey: 'status',
     width: 200,
@@ -24,7 +28,6 @@ const columns = (handleSelectedPage) => ([
     style: { color: '#475766', fontSize: 16 },
   },
   {
-    key: 'name',
     title: 'Nome do cliente',
     dataKey: 'user',
     width: 350,
@@ -34,7 +37,6 @@ const columns = (handleSelectedPage) => ([
     style: { color: '#475766', fontSize: 16 },
   },
   {
-    key: 'cpf',
     title: 'CPF/CNPJ',
     dataKey: 'user.cpf',
     width: 250,
@@ -43,7 +45,6 @@ const columns = (handleSelectedPage) => ([
 
   },
   {
-    key: 'contato',
     title: 'Contato',
     dataKey: 'user.contato',
     width: 250,
@@ -51,7 +52,6 @@ const columns = (handleSelectedPage) => ([
     style: { color: '#475766', fontSize: 16 },
   },
   {
-    key: 'tipo',
     title: 'Tipo',
     dataKey: 'user.tipo',
     width: 200,
@@ -59,7 +59,6 @@ const columns = (handleSelectedPage) => ([
     style: { color: '#475766', fontSize: 16 },
   },
   {
-    key: 'data',
     title: 'Data Venc.',
     dataKey: 'user.data',
     width: 200,

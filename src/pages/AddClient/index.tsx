@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useCallback, useMemo } from 'react';
-import BaseTable from 'react-base-table';
 import {
   Container,
   RadioGroup,
@@ -42,8 +41,7 @@ const AddClient: React.FC = () => {
           <label
             htmlFor="pessoaFisica"
             className="control control-radio"
-          >
-            Pessoa física
+          > Pessoa física
             <input
               type="radio"
               name="pessoaFisica"
@@ -53,10 +51,7 @@ const AddClient: React.FC = () => {
               type="button"
               className="control_indicator"
               onClick={() => setSelectedOption('cpf')}
-            >
-              1
-
-            </button>
+            >1</button>
           </label>
           <label htmlFor="pessoaJuridica" className="control control-radio">
             Pessoa jurídica
@@ -69,12 +64,13 @@ const AddClient: React.FC = () => {
               type="button"
               className="control_indicator"
               onClick={() => setSelectedOption('cnpj')}
-            >
-              2
-
-            </button>
+            >2</button>
           </label>
         </RadioGroup>
+
+
+      {/* Condição para renderizar a opção de Pessoa física ou jurídica */}
+
         {selectedOption === 'cpf'
           ? (
             <Content>
@@ -218,7 +214,8 @@ const AddClient: React.FC = () => {
               </Row>
               <AddAddressButton>ADICIONAR ENDEREÇO</AddAddressButton>
 
-              <BaseTable
+              <Table
+                key="cpf"
                 data={data}
                 width={780}
                 columns={columns}
@@ -372,6 +369,7 @@ const AddClient: React.FC = () => {
               <AddAddressButton>ADICIONAR ENDEREÇO</AddAddressButton>
 
               <Table
+                key="cnpj"
                 data={data}
                 width={780}
                 columns={columns}
