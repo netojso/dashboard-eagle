@@ -1,4 +1,4 @@
-<h1>Dashboard Eagle - Teste | 2T Informática</h1>
+<h1>Dashboard Eagle</h1>
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
